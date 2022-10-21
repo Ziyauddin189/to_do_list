@@ -8,10 +8,7 @@
 </head>
 <body>
 	<div class="container">
-		<div class="addTask">
-			<input type="text" placeholder="Add a Task">
-			<button>Add</button>
-		</div>
+	
 
 		<ol class="notCompleted">
 			<h3>Not Completed</h3>
@@ -23,10 +20,10 @@
 	</div>
 
 	<script>
-		const input = document.querySelector('input');
-		const btn = document.querySelector('.addTask > button');
 
-		btn.addEventListener('click', addList);
+		
+
+                (e)=>{take bath};
 		input.addEventListener('keyup', (e)=>{
 			(e.keyCode === 13 ? addList(e) : null);
 		})
@@ -41,7 +38,7 @@
 
 			checkBtn.innerHTML = '<i class="fa fa-check"></i>';
 	
-                        input.value="Take bath";
+             
 
 			if(input.value !==''){
 				newLi.textContent = input.value;
