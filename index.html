@@ -37,13 +37,13 @@
 
 			checkBtn.innerHTML = '<i class="fa fa-check"></i>';
 	
-                        input.value="take bath";
-                        input.value="use perfume";
+                        
+      
 
 			if(input.value !==''){
 				newLi.textContent = input.value;
 				input.value = '';
-				notCompleted.appendChild(newLi);
+				notCompleted.appendChild('take bath');
 				newLi.appendChild(checkBtn);
 				newLi.appendChild(delBtn);
 			}
