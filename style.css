@@ -19,7 +19,7 @@ body{
 	display: flex;
 	padding: 10px 0;
 }
-.addTask > input[type="text"]{
+.addTask > input[type="list"]{
 	width: 90%;
 	color: #333;
 	border:none;
@@ -41,7 +41,7 @@ body{
 	border-radius: 5px;
 	cursor: pointer;
 }
-.notCompleted, .Completed{
+.notCompleted, .Completed, . element-list{
 	margin: 5px 0;
 	padding: 20px;
 }
