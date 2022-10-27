@@ -19,7 +19,7 @@ body{
 	display: flex;
 	padding: 10px 0;
 }
-.addTask > input[type="list"]{
+.addTask > input[type="text"]{
 	width: 90%;
 	color: #333;
 	border:none;
