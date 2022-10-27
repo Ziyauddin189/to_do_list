@@ -9,7 +9,7 @@
 <body>
 	<div class="container">
 		<div class="addTask">
-			<input type="text" value="hi" placeholder="Add a Task">
+			<input type="text" Id="my" placeholder="Add a Task">
 			<button>Add</button>
 		</div>
 
@@ -32,8 +32,7 @@
 	<script>
 		const input = document.querySelector('input');
 		const btn = document.querySelector('.addTask > button');
-                const list = document.querySelector("#list");
-                var el = document.getElementsByTagName('li');
+                document.getElementById("my").value = "Johnny Bravo";
 
 		btn.addEventListener('click', addList);
 		input.addEventListener('keyup', (e)=>{
