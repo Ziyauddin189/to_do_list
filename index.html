@@ -11,10 +11,7 @@
 		<div class="addTask">
 			<input type="text" Id="my">
 			<button>Add </button> <br></br>
-                        <input type="text" Id="my1">
-			<button>Add</button>
-                        <input type="text" Id="my2">
-			<button>Add</button>
+                        
 		</div>
 
 		<ol class="notCompleted">
@@ -31,9 +28,7 @@
 		const input = document.querySelector('input');
 		const btn = document.querySelector('.addTask > button');
                 document.getElementById("my").value = "Have Bath";
-                const btn = document.querySelector('.addTask > button');
-                document.getElementById("my1").value = "pray ";
-                document.getElementById("my2").value = "give charity";
+               
 
 		btn.addEventListener('click', addList);
 		input.addEventListener('keyup', (e)=>{
