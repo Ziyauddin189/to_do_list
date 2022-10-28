@@ -7,9 +7,28 @@
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+<form>
+  Select your favorite browser:
+  <select id="myList" onchange="addList()">
+    <option></option>
+    <option>Google Chrome</option>
+    <option>Firefox</option>  
+    <option>Internet Explorer</option>
+    <option>Safari</option>
+    <option>Opera</option>
+  </select>
+<p>Your favorite browser is: <input type="text" id="demo" size="20"></p>
+</form>
+<script>
+function myFunction() {
+  var mylist = document.getElementById("myList");
+  document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
+}
+</script>
+
 	<div class="container">
 		<div class="addTask">
-			<input type="text" placeholder="Add a Task">
+			<input type="text" id="demo" placeholder="Add a Task">
 			<button>Add</button>
 		</div>
 
