@@ -10,7 +10,7 @@
 	<div class="container">
 		<div class="addTask">
 			<form>
-  Select your favorite browser:
+  Add all the tasks :
   <select id="myList" onchange="addList()">
     <option></option>
     <option>Google Chrome</option>
@@ -33,9 +33,10 @@
 	</div>
 
 	<script>
+               
 		const input = document.querySelector('input');
 		const btn = document.querySelector('.addTask > button');
-                document.getElementById("my").value = "Have Bath";
+                
                
 
 		btn.addEventListener('click', addList);
@@ -44,8 +45,11 @@
 		})
 
 		function addList(e){
+                        var mylist = document.getElementById("myList");
+  document.getElementById("notCompleted").value = mylist.options[mylist.selectedIndex].text;
+}
 			const notCompleted = document.querySelector('.notCompleted');
-                        document.getElementById("my").value = i;
+                        
 			const Completed = document.querySelector('.Completed');
 
 			const newLi = document.createElement('li');
