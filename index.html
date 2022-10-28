@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Awesome To-Do List HTML,CSS & JavaScript</title>
+  <title>Friday Etiquettes</title>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-<form>
-  Select your favorite browser:
+
+<script>
+function myFunction() {
+  var mylist = document.getElementById("myList");
+  document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
+}
+</script>
+                <ol class="notCompleted">
+			<h3>Complete the tasks</h3>
+		</ol>
+	<div class="container">
+		<div class="addTask">
+                        <form>
   <select id="myList" onchange="myFunction()">
     <option></option>
     <option>Trim nails</option>
@@ -21,17 +32,7 @@
     <option>Pray in congregation</option>
     <option>Give charity</option>
   </select>
-
 </form>
-<script>
-function myFunction() {
-  var mylist = document.getElementById("myList");
-  document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
-}
-</script>
-
-	<div class="container">
-		<div class="addTask">
 			<input type="text" id="demo" placeholder="Add a Task">
 			<button>Add</button>
 		</div>
